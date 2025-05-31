@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="gojat2.png" alt="Logo GOJAT" style="height:80px; vertical-align:middle; margin-right:8px;" />
+        </div>
+        <a href="../dashboard/dashboard.html"><i class="fa-solid fa-gauge-high"></i> DASHBOARD</a>
+        <a href="#" class="active"><i class="fa-solid fa-box"></i> ORDERS</a>
+        <a href="../history/history.html"><i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+        <a href="../account/account.html"><i class="fa-solid fa-user"></i> ACCOUNT</a>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo driver-title">
+                Customer
+            </div>
+            <div class="logout" onclick="confirmLogout()">
+                <i class="fa-solid fa-right-from-bracket"></i> LOGOUT
+            </div>
+        </div>
+        <div class="back" onclick="window.location.href='../dashboard/dashboard.html'">⬅ Back</div>
+        <div class="make-order-title">Make a Order</div>
+        <div class="order-card">
+            <form>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+                    <label for="pickup"
+                        style="min-width:130px; color:#fff; font-size:1em; font-family:inherit; font-weight:bold;">
+                        Pick Up Location :
+                    </label>
+                    <input type="text" id="pickup" name="pickup" placeholder="pick up location"
+                        style="flex:1; padding:10px 14px; border-radius:8px; border:1px solid #ccc; font-size:1em; font-family:inherit;">
+                </div>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+                    <label for="destination"
+                        style="min-width:152px; color:#fff; font-size:1em; font-family:inherit; font-weight:bold;">
+                        Destination :
+                    </label>
+                    <input type="text" id="destination" name="destination" placeholder="destination"
+                        style="flex:1; padding:10px 14px; border-radius:8px; border:1px solid #ccc; font-size:1em; font-family:inherit;">
+                </div>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:24px;">
+                    <label for="pickuptime"
+                        style="min-width:152px; color:#fff; font-size:1em; font-family:inherit; font-weight:bold;">
+                        Pick Up Time :
+                    </label>
+                    <input type="time" id="pickuptime" name="pickuptime"
+                        style="flex:1; padding:10px 14px; border-radius:8px; border:1px solid #ccc; font-size:1em; font-family:inherit;">
+                </div>
+                <button type="submit"
+                    style="display:block; margin-left: auto; background:#d49c47; color:#fff; border:none; border-radius:8px; padding:12px 32px; font-size:0.8em; font-weight:bold; cursor:pointer;">
+                    Order
+                </button>
+            </form>
+            <div class="order-card" style="margin-top:24px; position:relative; background-color: #fff;">
+                <p style="font-weight:bold; font-size:1.4em; color:#d49c47; margin-top:18px;">You got a driver</p>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
+                    <label style="min-width:130px; color:#d49c47; font-weight:bold; font-size:0.95em;">Name : </label>
+                    <span style="flex:1; font-size:0.95em;"></span>
+                </div>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
+                    <label style="min-width:130px; color:#d49c47; font-weight:bold; font-size:0.95em;">Phone Number : </label>
+                    <span style="flex:1; font-size:0.95em;"></span>
+                </div>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
+                    <label style="min-width:130px; color:#d49c47; font-weight:bold; font-size:0.95em;">Number Plate : </label>
+                    <span style="flex:1; font-size:0.95em;"></span>
+                </div>
+                <div style="display:flex; align-items:center; gap:16px;">
+                    <label style="min-width:130px; color:#d49c47; font-weight:bold; font-size:0.95em;">Price : </label>
+                    <span style="flex:1; font-size:0.95em;"></span>
+                </div>
+                <button
+                    style="position:absolute; right:36px; bottom:24px; background:#20612a; color:#fff; border:none; border-radius:8px; padding:12px 32px; font-size:0.8em; font-weight:bold; cursor:pointer;">
+                    Confirm here
+                </button>     
+             </div>
+            <p style="font-weight:bold; font-size:1em; color:#fff; margin-bottom:18px;">Note : You can transfer to driver’s e-money by phone number as the payment</p>
+            <script src="script.js"></script>  
+    </body>
+    
+    </html>
