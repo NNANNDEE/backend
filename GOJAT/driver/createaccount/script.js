@@ -14,9 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Please complete all data before creating an account!");
           return;
         }
+
+        const data = {
+          username: username,
+          email: email,
+          phone: phone,
+          password: password
+        }
+
+        fetch('../../backend/regis-driver.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+        .then(res => {
+          //window.location.href = "../dashboard/dashboard.html";
+        })
+
+        .catch(err => {
+          alert("An error occurred while creating the account. Please try again.");
+        });
   
         // Redirect ke dashboard
-        window.location.href = "../dashboard/dashboard.html";
+       
       });
     }
   })

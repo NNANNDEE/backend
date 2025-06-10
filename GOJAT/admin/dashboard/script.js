@@ -1,5 +1,5 @@
 function confirmLogout() {
     if (confirm('Are you sure you want to logout?')) {
-        window.location.href = '../../berandau.html';
+        window.location.href = '../../index.html';
     }
 }

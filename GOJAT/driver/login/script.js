@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   createBtn.addEventListener("click", function () {
     // Arahkan ke halaman pendaftaran (ubah sesuai struktur folder kamu)
-    window.location.href = "../dashboard/dashboard.html";
+    window.location.href = "../createaccount/createaccount.html";
   });
 });

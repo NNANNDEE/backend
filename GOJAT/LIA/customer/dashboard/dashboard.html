@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="gojat2.png" alt="Logo GOJAT" style="height:80px; vertical-align:middle; margin-right:8px;" />
+        </div>
+        <a href="#" class="active"><i class="fa-solid fa-gauge-high"></i> DASHBOARD</a>
+        <a href="../orders/orders.html"><i class="fa-solid fa-box"></i> ORDERS</a>
+        <a href="../history/history.html"><i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+        <a href="../account/account.html"><i class="fa-solid fa-user"></i> ACCOUNT</a>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo driver-title">
+                Customer
+            </div>
+            <div class="logout" onclick="confirmLogout()">
+                <i class="fa-solid fa-right-from-bracket"></i> LOGOUT
+            </div>
+        </div>
+        <div class="back">⬅ Back</div>
+        <div class="card">
+            <div class="info">
+                <strong id="username"></strong><br />
+                Phone number: <span id="phone">082366565113</span><br />
+                Email: <span id="email"></span><br />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
