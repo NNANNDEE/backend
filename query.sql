@@ -1,4 +1,5 @@
 create database ojek_online;
+drop database ojek_online;
 use ojek_online;
 create table driver(driver_ID int not null primary key, 
              driver_username varchar (20) not  null,
@@ -102,3 +103,12 @@ insert into customer (
 (10, 'Dina W', 820223344, 'dina@example.com', 'Makassar', 'dina1111');
 
 -- aku belum masukin rating nya driver
+
+
+-- DRIVER/violation
+select *from violation where driver_ID = [iniDriverID];
+
+-- DRIVER/hisory
+select *from trip_history where driver_ID = [iniDriverID];
+
+-- DRIVER/account
