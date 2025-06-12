@@ -1,0 +1,124 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 80px;
+  margin-top: 10px;
+}
+
+.navbar h1 {
+  color: #ab5852;
+  font-size: 24px;
+}
+
+.nav-links a {
+  color: #ab5852;
+  font-style: italic;
+  margin-left: 30px;
+  text-decoration: none;
+  text-align: flex-end;
+  gap: 10px;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  background-color: #ab5852;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.container {
+  background-color: #ab5852;
+  border-radius: 30px;
+  margin: 0px 40px;
+  padding: 100px 120px 120px;
+  margin-top: -25px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome {
+  color: white;
+  max-width: 40%;
+}
+
+.welcome h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  font-size: 18px;
+  font-family: "Kotta One", serif;
+}
+
+.login-box {
+  background-color: #f1f1f1;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px #ab5852;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-family: "Kotta One", serif;
+  color: #ab5852;
+  margin-bottom: 30px;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 15px;
+  font-style: italic;
+  color: #ab5852;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.forgot {
+  text-align: right;
+  font-style: italic;
+  color: #ab5852;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #ab5852;
+  color: white;
+  font-family: "Kotta One", serif;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #ab5852;
+}
