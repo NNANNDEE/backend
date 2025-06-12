@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="gojat2.png" alt="Logo GOJAT"
+                style="height:80px; vertical-align:middle; margin-right:8px;" />
+        </div>
+        <a href="#" class="active"><i class="fa-solid fa-gauge-high"></i> DASHBOARD</a>
+        <a href="../databaseOrders/databaseOrders.html"><i class="fa-solid fa-box"></i> DATABASE ORDERS</a>
+        <a href="../databaseCustomers/databaseCustomer.html"><i class="fa-solid fa-users"></i> DATABASE CUSTOMERS</a>
+        <a href="../dashboardDrivers/databaseDrivers.html"><i class="fa-solid fa-motorcycle"></i> DATABASE DRIVERS</a>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo driver-title">
+                Admin
+            </div>
+            <div class="logout" onclick="confirmLogout()">
+                <i class="fa-solid fa-right-from-bracket"></i> LOGOUT      
+            </div>
+        </div>
+        <div class="back">⬅ Back</div>
+        <div class="admin-greeting" style="margin-top:32px; font-size:1.5em; font-weight:bold; color:white;">
+            Hallo Admin!
+        </div>
+        <div class="card-container">
+            <div class="admin-card">
+                <h3>Incoming Orders</h3>
+                <div class="order-card" style="background:#f7f7f7; border-radius:12px; padding:20px 18px; margin-top:5px;">
+                    <div class="order-info">
+                        <strong>Name:</strong> Budi Santoso<br>
+                        <strong>Destination:</strong> Jl. Cikuda No. 10<br>
+                        <strong>Pickup Location:</strong> Jatinangor Town Square<br>
+                        <strong>Pickup Time:</strong> 14:00 <br>
+                    </div>
+                    <div class="order-dropdown-row" style="display: flex; gap: 16px; margin: 14px 0;">
+                        <div class="dropdown-group">
+                            <label for="price">Price:</label>
+                            <select id="price">
+                                <option value="10000">Rp 10.000</option>
+                                <option value="12000">Rp 12.000</option>
+                                <option value="15000">Rp 15.000</option>
+                            </select>
+                        </div>
+                        <div class="dropdown-group">
+                            <label for="driver">Select Driver:</label>
+                            <select class="form-select driver-select">
+                                <option selected disabled>Choose driver</option>
+                            </select>                              
+                        </div>
+                        <button class="confirm-btn" style="margin-left: 12px; margin-bottom:0;">Confirm</button>
+                    </div>
+                </div>
+            </div>  
+            <div class="admin-card">
+                <h3>Available Drivers</h3>
+                <div id="driverList">
+                    <p><strong>DriverID : </strong></p>
+                    <p><strong>Name : </strong></p>
+                    <p><strong>Phone : </strong></p>
+                    <p><strong>Email : </strong></p>
+                    <p><strong>Vehicle : </strong></p>
+                    <p><strong>Number Plate : </strong></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+            
+</body>
+</html>
